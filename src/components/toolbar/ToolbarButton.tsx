@@ -36,8 +36,7 @@ export const ToolbarButton = ({
     <div
       ref={ref}
       className="relative group"
-      onMouseEnter={() => dropdownItems && setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onClick={() => setOpen(!open)}
     >
       <button className="relative p-2 h-7 flex items-center gap-1.5 text-[#374151] text-xs border border-[#E5E7EB] rounded-lg cursor-pointer">
         <Image src={icon} alt="icon" />
