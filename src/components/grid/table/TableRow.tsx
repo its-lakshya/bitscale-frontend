@@ -62,7 +62,7 @@ const TableRow: React.FC<Props> = ({ data }) => {
       <td className="px-3 py-1.5 text-[#4B5563] border border-[#F3F4F6] cursor-pointer">
         <span className="flex items-center gap-2">
           <Image src={linkIcon} alt="lin icon" />
-          {data.linkedinJobUrl}
+          <span className='max-w-54 truncate'>{data.linkedinJobUrl}</span>
         </span>
       </td>
 
