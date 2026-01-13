@@ -47,7 +47,7 @@ const TableRow: React.FC<Props> = ({ data }) => {
 
       <td className="px-3 py-1.5 text-[#111928] border border-[#F3F4F6]">
         <span className='flex items-center gap-2'>
-          <CompanyLogo name={data.company} />
+          <Image src={data.logo} alt='company logo' className='size-4' />
           {data.company}
         </span>
         </td>

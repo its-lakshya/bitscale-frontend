@@ -48,7 +48,7 @@ export default function Toolbar() {
 
         <div className="h-5 w-px bg-[#D1D5DB]" />
 
-        <div className='flex items-center gap-3 max-md:hidden'>
+        <div className="flex items-center gap-3 max-md:hidden">
           <ToolbarButton
             icon={rowIcon}
             label="2000 Rows"
@@ -98,7 +98,11 @@ export default function Toolbar() {
             className="px-3 h-7 flex items-center gap-2 bg-[#F3F4F6] text-[#1F2A37] rounded-lg cursor-pointer hover:scale-105 transition-all duration-300"
           >
             Action
-            <Image src={cheveroneDownIcon} alt="down arrow icon" className="max-md:hidden" />
+            <Image
+              src={cheveroneDownIcon}
+              alt="down arrow icon"
+              className="max-md:hidden"
+            />
           </div>
 
           {actionOpen && (

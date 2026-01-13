@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 type DropdownItem = {
   label: string;
@@ -39,11 +39,9 @@ export const ToolbarButton = ({
       onMouseEnter={() => dropdownItems && setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <button
-        className="relative p-2 h-7 flex items-center gap-1.5 text-[#374151] text-xs border border-[#E5E7EB] rounded-lg cursor-pointer"
-      >
+      <button className="relative p-2 h-7 flex items-center gap-1.5 text-[#374151] text-xs border border-[#E5E7EB] rounded-lg cursor-pointer">
         <Image src={icon} alt="icon" />
-       <span className="max-md:hidden">{label}</span>
+        <span className="max-md:hidden">{label}</span>
         <span
           className={`absolute ${
             badge ? "size-4 -top-1.5 -right-2" : "size-1.5 -top-0.5 -right-0.5"

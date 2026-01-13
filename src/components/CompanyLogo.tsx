@@ -1,5 +1,3 @@
-import React from "react";
-
 const gradients = [
   "from-indigo-500 to-purple-500",
   "from-pink-500 to-rose-500",

@@ -7,13 +7,14 @@ export const StatusValues = {
   queued: "queued",
 } as const;
 
-export type Status = typeof StatusValues[keyof typeof StatusValues];
+export type Status = (typeof StatusValues)[keyof typeof StatusValues];
 
 export interface GridRow {
   id: number;
   personName: string;
   lastUpdated: string;
   company: string;
+  logo: string;
   website: string;
   linkedinJobUrl: string;
   emailStatus: Status;
@@ -23,4 +24,3 @@ export interface GridRow {
   phoneStatus: Status;
   linkScraper: Status;
 }
-

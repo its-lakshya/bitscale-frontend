@@ -10,7 +10,6 @@ const GridRunningNotification: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
   const [progress, setProgress] = useState(10);
 
-  // Simulate progress
   useEffect(() => {
     if (!visible) return;
 

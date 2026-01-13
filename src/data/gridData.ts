@@ -1,4 +1,34 @@
 import { GridRow } from "@/types/grid";
+import adobe from "../assets/logos/adobe.svg";
+import airbnb from "../assets/logos/airbnb.svg";
+import amazon from "../assets/logos/amazon.svg";
+import asana from "../assets/logos/asana.svg";
+import atlassian from "../assets/logos/atlassian.svg";
+import canva from "../assets/logos/canva.svg";
+import coinbase from "../assets/logos/coinbase.svg";
+import dropbox from "../assets/logos/dropbox.svg";
+import figma from "../assets/logos/figma.svg";
+import google from "../assets/logos/google.svg";
+import intel from "../assets/logos/intel.png";
+import linear from "../assets/logos/linear.png";
+import meta from "../assets/logos/meta.svg";
+import microsoft from "../assets/logos/microsoft.svg";
+import netflix from "../assets/logos/netflix.svg";
+import notion from "../assets/logos/notion.svg";
+import openai from "../assets/logos/openai.svg";
+import oracle from "../assets/logos/oracle.svg";
+import pinterest from "../assets/logos/pinterest.svg";
+import reddit from "../assets/logos/reddit.svg";
+import salesforce from "../assets/logos/salesforce.svg";
+import shopify from "../assets/logos/shopify.svg";
+import slack from "../assets/logos/slack.svg";
+import sony from "../assets/logos/sony.svg";
+import spotify from "../assets/logos/spotify.svg";
+import stripe from "../assets/logos/stripe.png";
+import tesla from "../assets/logos/tesla.svg";
+import twilio from "../assets/logos/twilio.png";
+import uber from "../assets/logos/uber.svg";
+import zoom from "../assets/logos/zoom.svg";
 
 export const gridData: GridRow[] = [
   {
@@ -6,6 +36,7 @@ export const gridData: GridRow[] = [
     personName: "Ava Robinson",
     lastUpdated: "Oct 12, 2024 at 14:21 PM",
     company: "Google",
+    logo: google,
     website: "https://www.google.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/239123",
     emailStatus: "success",
@@ -20,6 +51,7 @@ export const gridData: GridRow[] = [
     personName: "Liam Chen",
     lastUpdated: "Oct 12, 2024 at 13:58 PM",
     company: "Stripe",
+    logo: stripe,
     website: "https://www.stripe.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883921",
     emailStatus: "failed",
@@ -33,6 +65,7 @@ export const gridData: GridRow[] = [
     personName: "Sophia Martinez",
     lastUpdated: "Oct 12, 2024 at 12:45 PM",
     company: "Notion",
+    logo: notion,
     website: "https://www.notion.so",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883922",
     emailStatus: "queued",
@@ -46,6 +79,7 @@ export const gridData: GridRow[] = [
     personName: "Ethan Patel",
     lastUpdated: "Oct 11, 2024 at 18:31 PM",
     company: "Figma",
+    logo: figma,
     website: "https://www.figma.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883923",
     emailStatus: "success",
@@ -60,6 +94,7 @@ export const gridData: GridRow[] = [
     personName: "Maya Singh",
     lastUpdated: "Oct 11, 2024 at 16:12 PM",
     company: "Airbnb",
+    logo: airbnb,
     website: "https://www.airbnb.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883924",
     emailStatus: "blocked",
@@ -73,6 +108,7 @@ export const gridData: GridRow[] = [
     personName: "Noah Williams",
     lastUpdated: "Oct 11, 2024 at 14:09 PM",
     company: "Amazon",
+    logo: amazon,
     website: "https://www.amazon.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883925",
     emailStatus: "success",
@@ -87,6 +123,7 @@ export const gridData: GridRow[] = [
     personName: "Olivia Brown",
     lastUpdated: "Oct 11, 2024 at 11:43 PM",
     company: "Meta",
+    logo: meta,
     website: "https://www.meta.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883926",
     emailStatus: "failed",
@@ -100,6 +137,7 @@ export const gridData: GridRow[] = [
     personName: "Daniel Kim",
     lastUpdated: "Oct 10, 2024 at 17:55 PM",
     company: "Atlassian",
+    logo: atlassian,
     website: "https://www.atlassian.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883927",
     emailStatus: "success",
@@ -114,6 +152,7 @@ export const gridData: GridRow[] = [
     personName: "Isabella Garcia",
     lastUpdated: "Oct 10, 2024 at 15:32 PM",
     company: "Shopify",
+    logo: shopify,
     website: "https://www.shopify.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883928",
     emailStatus: "queued",
@@ -127,6 +166,7 @@ export const gridData: GridRow[] = [
     personName: "Henry Adams",
     lastUpdated: "Oct 10, 2024 at 12:07 PM",
     company: "Netflix",
+    logo: netflix,
     website: "https://www.netflix.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883929",
     emailStatus: "success",
@@ -136,11 +176,12 @@ export const gridData: GridRow[] = [
     phoneStatus: "success",
     linkScraper: "success",
   },
-    {
+  {
     id: 11,
     personName: "Lucas Wright",
     lastUpdated: "Oct 09, 2024 at 16:42 PM",
     company: "Salesforce",
+    logo: salesforce,
     website: "https://www.salesforce.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883930",
     emailStatus: "success",
@@ -155,6 +196,7 @@ export const gridData: GridRow[] = [
     personName: "Emily Johnson",
     lastUpdated: "Oct 09, 2024 at 15:20 PM",
     company: "Slack",
+    logo: slack,
     website: "https://www.slack.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883931",
     emailStatus: "failed",
@@ -168,6 +210,7 @@ export const gridData: GridRow[] = [
     personName: "Benjamin Lee",
     lastUpdated: "Oct 09, 2024 at 13:55 PM",
     company: "Zoom",
+    logo: zoom,
     website: "https://www.zoom.us",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883932",
     emailStatus: "success",
@@ -182,6 +225,7 @@ export const gridData: GridRow[] = [
     personName: "Chloe Nguyen",
     lastUpdated: "Oct 08, 2024 at 18:10 PM",
     company: "Coinbase",
+    logo: coinbase,
     website: "https://www.coinbase.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883933",
     emailStatus: "queued",
@@ -195,6 +239,7 @@ export const gridData: GridRow[] = [
     personName: "Jack Thompson",
     lastUpdated: "Oct 08, 2024 at 16:02 PM",
     company: "Uber",
+    logo: uber,
     website: "https://www.uber.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883934",
     emailStatus: "success",
@@ -209,6 +254,7 @@ export const gridData: GridRow[] = [
     personName: "Hannah Moore",
     lastUpdated: "Oct 08, 2024 at 14:45 PM",
     company: "Dropbox",
+    logo: dropbox,
     website: "https://www.dropbox.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883935",
     emailStatus: "blocked",
@@ -222,6 +268,7 @@ export const gridData: GridRow[] = [
     personName: "Ryan Scott",
     lastUpdated: "Oct 07, 2024 at 17:30 PM",
     company: "Pinterest",
+    logo: pinterest,
     website: "https://www.pinterest.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883936",
     emailStatus: "success",
@@ -236,6 +283,7 @@ export const gridData: GridRow[] = [
     personName: "Natalie Brooks",
     lastUpdated: "Oct 07, 2024 at 15:11 PM",
     company: "Reddit",
+    logo: reddit,
     website: "https://www.reddit.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883937",
     emailStatus: "failed",
@@ -249,6 +297,7 @@ export const gridData: GridRow[] = [
     personName: "Oliver Green",
     lastUpdated: "Oct 07, 2024 at 13:46 PM",
     company: "OpenAI",
+    logo: openai,
     website: "https://www.openai.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883938",
     emailStatus: "success",
@@ -263,6 +312,7 @@ export const gridData: GridRow[] = [
     personName: "Priya Kapoor",
     lastUpdated: "Oct 06, 2024 at 16:25 PM",
     company: "Tesla",
+    logo: tesla,
     website: "https://www.tesla.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883939",
     emailStatus: "queued",
@@ -271,11 +321,12 @@ export const gridData: GridRow[] = [
     phoneStatus: "queued",
     linkScraper: "idle",
   },
-    {
+  {
     id: 21,
     personName: "Victor Alvarez",
     lastUpdated: "Oct 06, 2024 at 14:02 PM",
     company: "Twilio",
+    logo: twilio,
     website: "https://www.twilio.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883940",
     emailStatus: "success",
@@ -290,6 +341,7 @@ export const gridData: GridRow[] = [
     personName: "Sara Nilsson",
     lastUpdated: "Oct 05, 2024 at 17:40 PM",
     company: "Canva",
+    logo: canva,
     website: "https://www.canva.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883941",
     emailStatus: "failed",
@@ -303,6 +355,7 @@ export const gridData: GridRow[] = [
     personName: "Ahmed Hassan",
     lastUpdated: "Oct 05, 2024 at 15:18 PM",
     company: "Spotify",
+    logo: spotify,
     website: "https://www.spotify.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883942",
     emailStatus: "success",
@@ -317,6 +370,7 @@ export const gridData: GridRow[] = [
     personName: "Laura Fischer",
     lastUpdated: "Oct 05, 2024 at 13:50 PM",
     company: "Asana",
+    logo: asana,
     website: "https://www.asana.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883943",
     emailStatus: "queued",
@@ -330,6 +384,7 @@ export const gridData: GridRow[] = [
     personName: "Tom Bennett",
     lastUpdated: "Oct 04, 2024 at 16:33 PM",
     company: "Linear",
+    logo: linear,
     website: "https://www.linear.app",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883944",
     emailStatus: "success",
@@ -344,6 +399,7 @@ export const gridData: GridRow[] = [
     personName: "Yuki Tanaka",
     lastUpdated: "Oct 04, 2024 at 14:19 PM",
     company: "Sony",
+    logo: sony,
     website: "https://www.sony.com",
     linkedinJobUrl: "lhttps://www.inkedin.com/jobs/view/883945",
     emailStatus: "blocked",
@@ -357,6 +413,7 @@ export const gridData: GridRow[] = [
     personName: "Michael O'Connor",
     lastUpdated: "Oct 03, 2024 at 17:05 PM",
     company: "Intel",
+    logo: intel,
     website: "https://www.intel.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883946",
     emailStatus: "success",
@@ -371,6 +428,7 @@ export const gridData: GridRow[] = [
     personName: "Anita Desai",
     lastUpdated: "Oct 03, 2024 at 15:42 PM",
     company: "Oracle",
+    logo: oracle,
     website: "https://www.oracle.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883947",
     emailStatus: "failed",
@@ -383,7 +441,8 @@ export const gridData: GridRow[] = [
     id: 29,
     personName: "Robert King",
     lastUpdated: "Oct 03, 2024 at 13:28 PM",
-    company: "https://www.Adobe",
+    company: "Adobe",
+    logo: adobe,
     website: "https://www.adobe.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883948",
     emailStatus: "success",
@@ -398,6 +457,7 @@ export const gridData: GridRow[] = [
     personName: "Nina Kovac",
     lastUpdated: "Oct 02, 2024 at 16:14 PM",
     company: "Microsoft",
+    logo: microsoft,
     website: "https://www.microsoft.com",
     linkedinJobUrl: "https://www.linkedin.com/jobs/view/883949",
     emailStatus: "queued",

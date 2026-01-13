@@ -28,7 +28,7 @@ const EnrichmentButton = () => {
       >
         <button className="h-7 flex items-center gap-2 px-3 rounded-l-lg max-lg:rounded-lg bg-[#1F2A37] text-white cursor-pointer">
           <Image src={starIcon} alt="start icon" />
-          <span className='max-lg:hidden'>Enrichment</span>
+          <span className="max-lg:hidden">Enrichment</span>
         </button>
         <button className="h-7 flex items-center gap-2 px-2 rounded-r-lg bg-[#1F2A37] text-white cursor-pointer max-lg:hidden">
           <Image src={cheveroneDownWhiteIcon} alt="down arrow icon" />

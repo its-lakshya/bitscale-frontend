@@ -1,10 +1,10 @@
 import Image from "next/image";
-import infoCircleIcon from "../assets/icons/info-circle.svg"
+import infoCircleIcon from "../assets/icons/info-circle.svg";
 
 const Alert = () => {
   return (
     <div className="w-full h-11 bg-[#C81E1E] text-white flex items-center justify-center gap-6 max-md:gap-3 max-sm:text-[10px] text-sm max-md:text-xs font-medium">
-      <p className='flex items-center gap-2'>
+      <p className="flex items-center gap-2">
         Payment failed. 450,000 credits will permanently expire in 30 days
         <Image src={infoCircleIcon} alt="info icon" />
       </p>

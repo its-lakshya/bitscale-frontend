@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="w-full flex items-center justify-between gap-2 h-10 px-3 text-xs font-medium border-t border-[#F3F4F6] sticky bottom-0">
       <div className="flex items-center gap-4 flex-1 h-full max-md:w-1/3 md:max-lg:w-1/3 lg:max-2xl:w-1/2">
-        <button className="flex items-center gap-2 px-3 py-1 border border-gray-200 rounded-lg w-max">
+        <button className="flex items-center justify-center gap-2 px-3 py-1 border border-gray-200 rounded-lg w-max bg-red-400">
           <Image src={plusIcon} alt="plus icon" />
           <span className="max-lg:hidden">Grid</span>
         </button>
