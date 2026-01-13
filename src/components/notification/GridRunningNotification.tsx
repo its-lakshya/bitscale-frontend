@@ -38,22 +38,22 @@ const GridRunningNotification: React.FC = () => {
           <div className="flex-1 flex items-center">
             <div className="w-full h-2 rounded-full bg-[#E0E3E7] overflow-hidden">
               <div
-                className="h-full bg-[#2563EB] transition-all"
+                className="h-full bg-[#1A56DB] transition-all"
                 style={{ width: `${progress}%` }}
               />
             </div>
           </div>
 
-          <div className="text-xs font-medium text-[#2563EB] whitespace-nowrap">
+          <div className="text-xs font-medium text-[#1A56DB] whitespace-nowrap">
             {progress}%
           </div>
         </div>
 
         {expanded && (
           <div className="mt-3 text-xs text-[#6B7280] space-y-1">
-            <p>• Processing imported rows</p>
-            <p>• Running enrichments</p>
-            <p>• Evaluating conditions</p>
+            <p className='animate-pulse'>• Processing imported rows</p>
+            <p className='animate-pulse'>• Running enrichments</p>
+            <p className='animate-pulse'>• Evaluating conditions</p>
           </div>
         )}
 
