@@ -1,24 +1,40 @@
+"use client"
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import buildingsIcon from "../../../assets/icons/buildings.svg";
 import calendarIcon from "../../../assets/icons/calendar.svg";
+import checkboxIcon from "../../../assets/icons/checkbox.svg";
+import enrichIcon from "../../../assets/icons/enrich.svg";
 import florinIcon from "../../../assets/icons/florin.svg";
+import gptIcon from "../../../assets/icons/gpt.svg";
 import mailIcon from "../../../assets/icons/mail.svg";
 import peopleIcon from "../../../assets/icons/people.svg";
-import gptIcon from "../../../assets/icons/gpt.svg";
-import enrichIcon from "../../../assets/icons/enrich.svg";
 import phoneIcon from "../../../assets/icons/phone.svg";
-import checkboxIcon from "../../../assets/icons/checkbox.svg";
 import playIcon from "../../../assets/icons/play.svg";
+import { TableHeaderShimmer } from "../shimmer/ShimmerGrid";
 
 const headerCell =
   "px-3 py-2 w-52 h-[34px] bg-[#FAFAFA] border border-[#E5E7EB] border-l-0 text-left text-xs font-medium text-[#374151]";
 
 const TableHeader: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if(loading) return <TableHeaderShimmer />
+
   return (
     <thead className="sticky top-0">
       <tr>
         <th className={`${headerCell} w-[60px]`}>
-          <span className='w-full flex items-center gap-2'>
+          <span className="w-full flex items-center gap-2">
             <Image src={checkboxIcon} alt="checkbox icon" />
             <Image src={playIcon} alt="play icon" />
           </span>

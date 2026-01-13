@@ -1,15 +1,30 @@
+"use client"
+
 import { GridRow, StatusValues } from "@/types/grid";
 import Image from "next/image";
 import chevronRightIcon from "../../../assets/icons/chevron-right.svg";
 import linkIcon from "../../../assets/icons/link.svg";
 import peopleIcon from "../../../assets/icons/people.svg";
 import CompanyLogo from "@/components/CompanyLogo";
+import { TableRowShimmer } from "../shimmer/ShimmerGrid";
+import { useEffect, useState } from "react";
 
 interface Props {
   data: GridRow;
 }
 
 const TableRow: React.FC<Props> = ({ data }) => {
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+  
+      return () => clearTimeout(timer);
+    }, []);
+  
+    if(loading) return <TableRowShimmer />
   return (
     <tr className="text-xs font-normal hover:bg-gray-50 transition">
       <td className="px-3 py-1.5 border border-[#F3F4F6]  text-[#6B7280]">
