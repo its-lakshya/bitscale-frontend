@@ -1,4 +1,5 @@
 import Alert from "@/components/Alert";
+import Footer from "@/components/Footer";
 import { DataGrid } from "@/components/grid/DataGrid";
 import Header from "@/components/Header";
 import Toolbar from "@/components/toolbar/Toolbar";
@@ -10,6 +11,7 @@ export default function DashboardPage() {
       <Alert />
       <Toolbar />
       <DataGrid />
+      <Footer />
     </main>
   );
 }
