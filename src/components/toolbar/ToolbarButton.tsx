@@ -43,7 +43,7 @@ export const ToolbarButton = ({
         className="relative p-2 h-7 flex items-center gap-1.5 text-[#374151] text-xs border border-[#E5E7EB] rounded-lg cursor-pointer"
       >
         <Image src={icon} alt="icon" />
-        {label}
+       <span className="max-md:hidden">{label}</span>
         <span
           className={`absolute ${
             badge ? "size-4 -top-1.5 -right-2" : "size-1.5 -top-0.5 -right-0.5"

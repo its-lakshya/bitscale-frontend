@@ -44,19 +44,19 @@ export default function LoadDataButton() {
           <Image src={peopleIcon} alt="people icon" />
           <Image src={buildingsIcon} alt="building icon" className="-ml-2.5" />
         </span>
-        Load Data
-        <Image src={cheveroneDownIcon} alt="down arrow icon" />
+        Load <span className='max-lg:hidden'>Data</span>
+        <Image src={cheveroneDownIcon} alt="down arrow icon" className='max-md:hidden'/>
         <span className="absolute size-4 -top-1.5 -right-1 bg-[#1A56DB] flex items-center justify-center text-white text-[10px] rounded-full">
           1
         </span>
       </div>
 
       {open && (
-        <div className="absolute left-0 top-9 bg-white border border-[#E5E7EB] rounded-xl shadow-lg z-50 min-w-[210px] overflow-hidden">
+        <div className="absolute left-0 top-9 bg-white border border-[#E5E7EB] rounded-xl shadow-lg z-50 min-w-52.5 overflow-hidden">
           {items.map((item) => (
             <div
               key={item.label}
-              className="flex items-center gap-2 px-3 py-2 text-xs text-[#374151] hover:bg-gray-100 cursor-pointer transition"
+              className="flex items-center gap-2 px-3 py-2 text-xs text-[#374151] hover:bg-gray-100 cursor-pointer transition-all"
             >
               <span className="text-gray-500">{item.icon}</span>
               <span>{item.label}</span>

@@ -26,11 +26,11 @@ const EnrichmentButton = () => {
         className="flex items-center gap-0.5 cursor-pointer"
         onClick={() => setEnrichOpen(!enrichOpen)}
       >
-        <button className="h-7 flex items-center gap-2 px-3 rounded-l-lg bg-[#1F2A37] text-white cursor-pointer">
+        <button className="h-7 flex items-center gap-2 px-3 rounded-l-lg max-lg:rounded-lg bg-[#1F2A37] text-white cursor-pointer">
           <Image src={starIcon} alt="start icon" />
-          Enrichment
+          <span className='max-lg:hidden'>Enrichment</span>
         </button>
-        <button className="h-7 flex items-center gap-2 px-2 rounded-r-lg bg-[#1F2A37] text-white cursor-pointer">
+        <button className="h-7 flex items-center gap-2 px-2 rounded-r-lg bg-[#1F2A37] text-white cursor-pointer max-lg:hidden">
           <Image src={cheveroneDownWhiteIcon} alt="down arrow icon" />
         </button>
       </div>

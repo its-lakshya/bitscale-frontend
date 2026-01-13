@@ -14,12 +14,16 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-4">
           <Image src={starIcon} alt="star icon" />
-          <div className="flex items-center gap-2">
-            <span className="text-[#9CA3AF]">
+          <div className="flex items-center gap-1 md:gap-2 w-full min-w-0">
+            <span className="text-[#9CA3AF] truncate max-lg:w-22" title="Workbook - Bitscale UX/UI testing flow"
+            >
               Workbook - Bitscale UX/UI testing flow
             </span>
-            <span className="text-[#9CA3AF]">/</span>
-            <span className="text-[#374151]">Bitscale grid only</span>
+            <span className="text-[#9CA3AF] shrink-0">/</span>
+            <span className="text-[#374151] truncate min-w-0 max-lg:w-20" title="Bitscale grid only"
+            >
+              Bitscale grid only
+            </span>
           </div>
         </div>
         {/* <div className="flex items-center gap-2 ml-4">
@@ -32,13 +36,13 @@ const Header = () => {
       </div>
 
       <div className="flex items-center gap-4">
-        <button className="flex items-center gap-1.5 px-3 py-1 bg-[#FBF3DB] text-[#CB912E] rounded-2xl hover:scale-105 translate-full duration-300 cursor-pointer">
+        <button className="flex items-center gap-1.5 px-3 py-1 bg-[#FBF3DB] text-[#CB912E] rounded-2xl hover:scale-105 transition-all duration-300 cursor-pointer">
           <Image src={rocketIcon} alt="rocket icon" />
-          Upgrade Plan
+          <span className='max-md:hidden'>Upgrade Plan</span>
         </button>
         <Image src={cloudIcon} alt="cloud icon" />
-        <button className="flex items-center gap-4 px-2 py-1 bg-[#EDF3EC] text-xs border border-[#98BCA6] rounded-[10px] hover:scale-105 translate-full duration-300 cursor-pointer">
-          <div className='flex items-center gap-1.5'>
+        <button className="flex items-center gap-4 px-2 py-1 bg-[#EDF3EC] text-xs border border-[#98BCA6] rounded-[10px] hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="flex items-center gap-1.5 max-md:hidden">
             <Image src={coinsIcon} alt="coins icon" />
             <span className="text-[#438361] ">500/500</span>
           </div>
