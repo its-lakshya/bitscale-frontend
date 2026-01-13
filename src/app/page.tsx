@@ -15,5 +15,3 @@ export default function DashboardPage() {
     </main>
   );
 }
-
-                  <div className='w-full h-5.25 rounded-lg bg-[#F3F4F6]'></div>

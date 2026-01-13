@@ -406,5 +406,4 @@ export const gridData: GridRow[] = [
     phoneStatus: "queued",
     linkScraper: "idle",
   },
-
 ];

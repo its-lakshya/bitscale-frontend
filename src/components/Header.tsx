@@ -26,13 +26,6 @@ const Header = () => {
             </span>
           </div>
         </div>
-        {/* <div className="flex items-center gap-2 ml-4">
-          <span className="text-sm text-gray-600">Grid running</span>
-          <div className="w-28 h-2 rounded-full bg-gray-200 overflow-hidden">
-            <div className="h-full w-1/3 bg-blue-500" />
-          </div>
-          <span className="text-sm text-gray-600">10%</span>
-        </div> */}
       </div>
 
       <div className="flex items-center gap-4">
