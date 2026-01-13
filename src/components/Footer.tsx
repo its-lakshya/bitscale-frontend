@@ -72,7 +72,7 @@ const Footer = () => {
             showMoreButton ? "max-md:block" : "max-md:hidden"
           }`}
         >
-          <button className="flex items-center gap-2 text-[#C81E1E] cursor-pointer max-md:px-2 max-md:py-1.5">
+          <button className="flex items-center gap-2 cursor-pointer max-md:px-2 max-md:py-1.5">
             <Image src={deleteIcon} alt="delete Icon" />
             Kill Run
           </button>

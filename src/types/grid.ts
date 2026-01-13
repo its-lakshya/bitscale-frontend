@@ -1,5 +1,3 @@
-import { StaticImageData } from "next/image";
-
 export const StatusValues = {
   idle: "idle",
   running: "running",
@@ -16,7 +14,7 @@ export interface GridRow {
   personName: string;
   lastUpdated: string;
   company: string;
-  logo: string | StaticImageData;
+  logo: string;
   website: string;
   linkedinJobUrl: string;
   emailStatus: Status;
